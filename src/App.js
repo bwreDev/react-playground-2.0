@@ -1,15 +1,16 @@
-import React from 'react';
-import ProjectTiles from './Project-tiles';
-import Demonym from './demonymapp/demonym';
+import React, { Component } from 'react';
+import './App.css';
 
-function App() {
-  return (
-    <main className='App'>
-      <h1>Hello world!</h1>
-      <ProjectTiles />
-      <Demonym />
-    </main>
-  );
+import DemonynApp from './demonymapp/demonymApp';
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <DemonynApp/>
+      </div>
+    );
+  }
 }
 
 export default App;
